@@ -1,0 +1,5 @@
+Go Web Applications course from Pluralsight.
+
+Run with:
+
+  go run ./cmd/api
