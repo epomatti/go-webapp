@@ -47,7 +47,7 @@ func (app *application) getBook(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Bad Request", http.StatusBadRequest)
 		return
 	}
-	fmt.Fprintf(w, "Display the details of a specific book with ID: %d", idInt)
+	fmt.Fprintf(w, "Display the details of a specific book with ID: %d\n", idInt)
 }
 
 func (app *application) updateBook(w http.ResponseWriter, r *http.Request) {
@@ -57,7 +57,7 @@ func (app *application) updateBook(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Bad Request", http.StatusBadRequest)
 		return
 	}
-	fmt.Fprintf(w, "Update the details of a specific book with ID: %d", idInt)
+	fmt.Fprintf(w, "Update the details of a specific book with ID: %d\n", idInt)
 }
 
 func (app *application) deleteBook(w http.ResponseWriter, r *http.Request) {
@@ -67,5 +67,5 @@ func (app *application) deleteBook(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Bad Request", http.StatusBadRequest)
 		return
 	}
-	fmt.Fprintf(w, "Delete a specific book with ID: %d", idInt)
+	fmt.Fprintf(w, "Delete a specific book with ID: %d\n", idInt)
 }
